@@ -16,11 +16,31 @@
 * graphql
 
 * Apollo Client
- 
+
 * React
 
 
 ## Project Setup
+
+## Using Docker
+
+1. Build Project
+
+   ```bash
+   docker-compose build
+   ```
+
+2. Precompile assets
+
+    ```bash
+    docker-compose run web bundle exec rails assets:precompile
+    ```
+
+3. Run server
+
+   ```bash
+   docker-compose up
+   ```
 
 1.  Get the code. Clone this git repository and check out the latest release:
 
@@ -39,7 +59,7 @@
     ```bash
     bundle exec rails assets:precompile
     ```
-   
+
 5.  Create and populate database with seeds using:
     ```
     rails db:create db:migrate db:seed
@@ -47,11 +67,11 @@
 
 6.  Install dependencies:
     ```
-    npm install
+    yarn install
     ```
 
 7.  Run server:
     ```
     bin/dev
     ```
-    your application is ready to serve `http://localhost:3000/`
+    your application is ready to serve `http://0.0.0.0:3000/`

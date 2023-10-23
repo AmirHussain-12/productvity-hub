@@ -28,5 +28,5 @@ export const formatDate = (d) => {
 
 export const initCapital = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 
-export const BASE_URL = "http://localhost:3000"
+export const BASE_URL = "http://0.0.0.0:3000"
 export const CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
